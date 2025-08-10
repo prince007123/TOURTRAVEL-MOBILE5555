@@ -1,0 +1,623 @@
+html, body {
+  height: 100%;
+}
+
+
+  body {
+  overflow-x: hidden;  /* Horizontal scroll band karega */
+  margin: 0;          /* Default margin hatao */
+  padding: 0;         /* Default padding hatao */
+  width: 100%;        /* Full width lelo */
+}
+
+
+
+
+.navbar{
+
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    top: 0;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.logo{
+
+    height: 220px;
+    cursor: pointer;
+    
+    
+ 
+}
+.logo img{
+
+    height: 220px;
+    padding-top: 12px;
+    
+}
+
+.full-box{
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-overlay{
+
+    background-image: url(car-window-man.png);
+    background-size: cover;
+    object-fit: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    filter: brightness( 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+.container{
+
+
+height: 100vh;
+background-color: #CADCFC;
+}
+.navbar button{
+
+    background-color: transparent;
+    border: none;
+    padding-top: 20px;
+
+}
+.navbar p{
+
+    color: white;
+     font-size: 15px;
+     cursor: pointer;
+     
+}
+.navbar i{
+color: white;
+font-size: 18px;
+padding-top: 25px;
+cursor: pointer;
+
+}
+.navbar button:hover i,
+.navbar button:hover p {
+  color: #c1baba; /* Golden Yellow */
+  transition: color 0.3s ease;
+}
+.navbar button p {
+  transition: transform 0.3s ease;
+}
+
+.navbar button:hover p {
+  transform: translateX(1px);
+  color: #c1baba; /* Cyan */
+}
+
+button p{
+
+    margin-top: 5px;
+}
+.reviews{
+
+    padding-right: 7px;
+}
+.animation-top{
+
+    position: relative;
+    animation: slideTop 1s ease-out forwards;
+    opacity: 0;
+}
+@keyframes slideTop {
+
+    0%{
+        top: -50%;
+        opacity: 0;
+    }
+    100%{
+        top: 0%;
+        opacity: 100%;
+    }
+}
+.animate-top:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.animate-top:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.animate-top:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.slideshow{
+
+position: relative;
+height: 400px;
+width: 50%;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0,0.3);
+border: 1px solid black;
+margin-bottom: 70px;
+margin-right: 80px;
+margin-left: 25px;
+
+
+
+
+}
+.slide{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+    
+}
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+.slide img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+ .slide .text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 5; /* Image ke upar aayega */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* background ke upar dikhne ke liye */
+  background-color: rgba(0, 0, 0, 0.5); /* optional transparent bg for readability */
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+
+.booking-section{
+
+    
+    
+    display:flex;
+    align-items: center;
+    padding-top: 110px;
+    gap: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: aut;
+    flex-wrap: wrap;
+    width: 90%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0,0.2);
+}
+.input-box{
+
+z-index: 0;
+position: relative;
+
+
+
+}
+.input input{
+ 
+    border-radius: 20px;
+    padding: 10px 90px 10px 90px ;
+    font-size: 17px;
+    border: 1px solid #f5f5f5;
+    font-weight: 600;
+       display: flex;
+    text-align: center;
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+    
+
+
+}
+.start{
+
+    display: flex;
+    justify-content: center;
+}
+.start button{
+ 
+    border-radius: 10px;
+    padding: 9px 15px 9px 15px;
+    margin-top: 29px;
+    background-color: #151515;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+
+}
+.location img{
+
+    width:  100px;
+    padding-left: 140px;
+}
+form p{
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 42px;
+    color: #151515;
+}
+.input-box {
+
+    margin-bottom: 115px;
+}
+.start button:hover{
+    background: #0056b3;
+    transform: scale(1.05);
+}
+.input input:hover{
+
+
+background: rgb(241, 232, 232);
+transform: scale(1.05);
+
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.4s;
+  z-index: 999;
+  padding-top: 60px;
+}
+
+.sidebar h3 {
+  color: #ccc;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.sidebar a {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #444;
+  padding-left: 30px;
+}
+
+.sidebar a i {
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}.destination-full-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.bg-overlay2 {
+  background-image: url('destination-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+  z-index: 0;
+}
+
+/* Main content wrapper above bg */
+.destination-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+.destination-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: white;
+}
+
+/* Shop/box grid */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual box */
+.box {
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Image box */
+.box-img {
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Can be adjusted for your image ratio */
+}
+
+/* Content inside box */
+.box-content {
+  padding: 10px 15px;
+}
+
+.box-content p {
+  color: #0056b3;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+.offers-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-overlay3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-image: url('offer-bg.png'); /* 👈 Your full background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(60%);
+}
+
+.offer-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.offer-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.offer-card {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.offer-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+.offer-card h3,
+.offer-card p,
+.offer-card button {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #ffd700;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #e4e4e4;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 200px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.658);
+  animation: fadeIn 0.4s ease-in-out;
+  display: block;
+  text-align: center;
+  
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.modal-content input{
+
+  border-radius: 10px;
+  border: 1px solid #c1baba;
+  padding: 8px 10px 8px 10px;
+}
+.modal-content button{
+
+    border-radius: 10px;
+    padding: 9px 15px 9px 15px;
+    margin-top: 29px;
+    background-color: #151515;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.modal-content button:hover{
+    background: #0056b3;
+    transform: scale(1.05);
+}
+#getOtpBtn{
+ margin-bottom: 20px;
+
+}
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0 10px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #f4f4f4;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+/* Mobile ke liye */
+@media (max-width: 768px) {
+    body {
+        background: lightblue;
+    }
+}
+
+/* PC ke liye */
+@media (min-width: 769px) {
+    body {
+        background: lightgreen;
+    }
+}
+
+
+

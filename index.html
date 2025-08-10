@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <title>TOUR&TRAVELS</title>
+</head>
+<body>  <div  class="container">
+
+    <div class="full-box">
+        <div class="bg-overlay"></div>
+<div class="navbar">
+
+
+
+
+   
+
+  <div class="logo"> <img src="maddy-tour-removebg-preview.png" alt="logo"></div>
+  <div class="home animation-top">
+  <button onclick="toggleSidebar()">
+    <i class="fa-solid fa-bars"></i>
+    <p>Menu</p>
+  </button>
+</div>
+   <div class="home animation-top">
+  <button onclick="window.location.href='index.html'">
+    <i class="fa-solid fa-house"></i>
+    <p>Home Page</p>
+  </button>
+</div>
+
+   <div class="destinations animation-top"><button onclick="document.getElementById('destinations-section').scrollIntoView({ behavior: 'smooth' })"><i class="fa-solid fa-map-location-dot"></i><p>Destinations</p></button></div> 
+  <div class="offers animation-top">
+  <button onclick="document.querySelector('.offers-section').scrollIntoView({ behavior: 'smooth' })">
+    <i class="fa-solid fa-percent"></i>
+    <p>Offers</p>
+  </button>
+</div>
+<div class="contact animation-top">
+  <a href="https://wa.me/917668187737" target="_blank">
+    <button>
+      <i class="fa-solid fa-headset"></i> 
+      <p>Contact</p>
+    </button>
+  </a>
+</div>
+<!-- Sign Up Button -->
+<div class="signup animation-top">
+  <button id="openSignup"><i class="fa-solid fa-user-plus"></i> <p>Sign Up</p></button>
+</div>
+
+<!-- Modal Popup -->
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+
+    
+    
+    <span class="close-btn">&times;</span>
+    <h2>Sign Up</h2>
+    <input type="text" id="mobileInput" placeholder="Enter your mobile number">
+    <p id="errorMsg" class="error"></p>
+    <button id="getOtpBtn">Get OTP</button>
+
+    <div id="otpSection" style="display:none;">
+      <input type="text" placeholder="Enter OTP">
+      <button>Verify OTP</button>
+    </div>  
+  </div>
+</div>
+
+
+
+    
+
+
+</div> 
+
+<div class="booking-section">
+
+    <div class="slideshow ">
+
+      <div class="slide active animation-top">
+        <img src="img1.jpg" alt="slide1">
+        <div class="text"><p>Discover Rishikesh</p></div>
+      </div>
+
+      
+      <div class="slide">
+        <img src="img2.jpg" alt="slide2">
+        <div class="text"><p>Discover Nainital</p></div>
+      </div>
+
+      
+      <div class="slide">
+        <img src="img3.jpg" alt="slide3">
+        <div class="text"><p>Discover Haridwar</p></div>
+      </div>
+
+      
+      <div class="slide">
+        <img src="img4.jpg" alt="slide4">
+        <div class="text"><p>Discover Massoorie</p></div>
+      </div>
+
+      
+      <div class="slide">
+        <img src="img5.jpg" alt="slide5">
+        <div class="text"><p>Discover Dehradun</p></div>
+      </div>
+    </div>
+   
+    <div class="input-box">    
+    <form action="search">
+      <p>CHOOSE LOCATIONS</p>
+    <div class="input"> <input type="text"   placeholder="Choose Starting Point"></div>
+   <div class="location"> <img src="loaction-to_-loaction-removebg-preview.png" alt="locaton"></div>
+    <div class="input"> <input type="text"   placeholder="Choose Droping Point"></div>
+    </form>
+
+
+     <div class="start"><button>Start Journey</button></div>
+   </div>
+</div>
+
+   
+    </div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="toggleSidebar()">×</span>
+  <h3>MENU</h3>
+  <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+  <a href="#"><i class="fa-solid fa-comments"></i> Live Chat</a>
+  <a href="http://127.0.0.1:5500/sidebar.html"><i class="fa-solid fa-suitcase"></i> Travel Essentials</a>
+  <a href="#"><i class="fa-solid fa-clock"></i> Timings</a>
+</div>
+
+
+</div> 
+
+
+<section id="destinations-section" class="destination-full-box">
+  <div class="bg-overlay2"></div> <!-- Separate background layer -->
+
+  <div class="destination-content">
+    <h1>Top Destinations You Can’t Miss</h1>
+
+    <div class="shop-section">
+      <div class="box">
+        <div class="box-img" style="background-image: url('dhanaulti-loca1.jpeg');"></div>
+        <div class="box-content"><p>Dhanaulti (Near Mussoorie)</p></div>
+      </div>
+
+      <div class="box">
+        <div class="box-img" style="background-image: url('rajaji_national_park.jpg');"></div>
+        <div class="box-content"><p> Rajaji National Park (Between Haridwar & Dehradun)</p></div>
+      </div>
+
+      <div class="box">
+        <div class="box-img" style="background-image: url('neelkanth-mahdev-mandir.jpg');"></div>
+        <div class="box-content"><p>Neelkanth Mahadev Temple (Near Rishikesh)</p></div>
+      </div>
+
+      <div class="box">
+        <div class="box-img" style="background-image: url('Tehri-Lake-Cruise.jpg');"></div>
+        <div class="box-content"><p>Tehri Lake (Near Rishikesh/Chamba)</p></div>
+      </div>
+
+      <div class="box">
+        <div class="box-img" style="background-image: url('Vashishta-Gufa-Rishikesh.jpg');"></div>
+        <div class="box-content"><p>Vashishta Gufa(Near Rishikesh)</p></div>
+      </div>
+
+      <div class="box">
+        <div class="box-img" style="background-image: url('tiger-fall.jpg');"></div>
+        <div class="box-content"><p>Chakrata (Near Dehradun)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="offers-section">
+  <div class="bg-overlay3"></div>
+
+  <div class="offer-content">
+    <h2 class="offers-title">🔥 Exclusive Travel Offers Just for You</h2>
+
+    <div class="offer-boxes">
+      <!-- Offer 1 -->
+      <div class="offer-card" style="background-image: url('images/offer1.jpg');">
+        <div class="overlay"></div>
+        <h3>🌧️ Monsoon Special</h3>
+        <p>Flat 20% off on Mussoorie & Nainital trips.</p>
+        <button>Book Now</button>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="offer-card" style="background-image: url('images/offer2.jpg');">
+        <div class="overlay"></div>
+        <h3>⏳ Early Bird Discount</h3>
+        <p>Book 30 days early & get ₹1500 off.</p>
+        <button>Book Now</button>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="offer-card" style="background-image: url('images/offer3.jpg');">
+        <div class="overlay"></div>
+        <h3>🗓️ Weekend Getaway</h3>
+        <p>2-Day Rishikesh trip @ just ₹999!</p>
+        <button>Grab Deal</button>
+      </div>
+
+      <!-- Offer 4 -->
+      <div class="offer-card" style="background-image: url('images/offer4.jpg');">
+        <div class="overlay"></div>
+        <h3>👨‍👩‍👧‍👦 Group Discounts</h3>
+        <p>Travel in group & save ₹2000 instantly.</p>
+        <button>Know More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Tour & Travels</h3>
+      <p>Your journey starts here. Discover, Explore, Travel with us.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#destinations-section">Destinations</a></li>
+        <li><a href="index.html">Offers</a></li>
+        <li><a href="https://wa.me/917668187737" target="_blank">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p><i class="fa fa-map-marker"></i> Dehradun, Uttarakhand</p>
+      <p><i class="fa fa-phone"></i> +91 7668187737</p>
+     <p>
+  <i class="fa fa-envelope"></i>
+  <a href="mailto:uk05065020524@gmail.com" style="color: inherit; text-decoration: none;">
+    uk05065020524@gmail.com
+  </a>
+</p>
+<p><a href="https://wa.me/919876543210" target="_blank" style="color: green; font-weight: bold;">
+  <i class="fa fa-whatsapp"></i> Chat on WhatsApp
+</a>
+</p>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Tour & Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+  </div></section>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+  }
+</script>
+
+<script>
+  const modal = document.getElementById('signupModal');
+  const openBtn = document.getElementById('openSignup');
+  const closeBtn = document.querySelector('.close-btn');
+  const getOtpBtn = document.getElementById('getOtpBtn');
+  const otpSection = document.getElementById('otpSection');
+  const mobileInput = document.getElementById('mobileInput');
+  const errorMsg = document.getElementById('errorMsg');
+
+  // Show modal
+  openBtn.onclick = () => {
+    modal.style.display = 'block';
+    mobileInput.value = '';
+    errorMsg.textContent = '';
+    otpSection.style.display = 'none';
+  };
+
+  // Close modal
+  closeBtn.onclick = () => {
+    modal.style.display = 'none';
+  };
+
+  // Close if clicked outside
+  window.onclick = (e) => {
+    if (e.target == modal) modal.style.display = 'none';
+  };
+
+  // Validate and show OTP input
+  getOtpBtn.onclick = () => {
+    const number = mobileInput.value.trim();
+    const regex = /^[6-9]\d{9}$/; // Indian mobile number format
+
+    if (!regex.test(number)) {
+      errorMsg.textContent = "Please enter a valid 10-digit mobile number.";
+      otpSection.style.display = 'none';
+    } else {
+      errorMsg.textContent = '';
+      otpSection.style.display = 'block';
+    }
+  };
+</script>
+
+
+
+
+
+
+</body>
+</html>

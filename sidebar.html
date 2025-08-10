@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Essentials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #000000, #1e1e2f);
+      color: white;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 40px;
+      background: linear-gradient(90deg, #00f2fe, #4facfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .essentials-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00f2fe;
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #cfcfcf;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Travel Essentials</h1>
+  <div class="essentials-container">
+    <div class="card">
+      <i class="fas fa-passport"></i>
+      <h3>Passport & Visa</h3>
+      <p>Don’t forget your passport and check for required visas before travel.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Travel Insurance</h3>
+      <p>Stay protected against unexpected events during your trip.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-first-aid"></i>
+      <h3>First Aid Kit</h3>
+      <p>Always carry basic medicines, bandages, and sanitizer.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Power Bank</h3>
+      <p>Keep your phone charged with a handy power bank.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-wallet"></i>
+      <h3>Cash & Cards</h3>
+      <p>Always keep some local currency and international cards with you.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marked-alt"></i>
+      <h3>Offline Maps</h3>
+      <p>Download maps to access them without internet during travel.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-plug"></i>
+      <h3>Universal Adapter</h3>
+      <p>Charge your devices anywhere with a travel-friendly adapter.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-mask"></i>
+      <h3>Safety Masks</h3>
+      <p>Essential for hygiene in public places during long trips.</p>
+    </div>
+  </div>
+</body>
+</html>

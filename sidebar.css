@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+}
+
+.essentials-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+}
+
+.essentials-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.essentials-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #00ffd5;
+}
+
+.essentials-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.essentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.essential-item {
+  background: #1b1b1b;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,255,213,0.1);
+}
+
+.essential-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,255,213,0.3);
+}
+
+.essential-item i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #00ffd5;
+}
+
+.essential-item h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+.essential-item p {
+  color: #aaa;
+}

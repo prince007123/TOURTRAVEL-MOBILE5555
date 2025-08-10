@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour & Travel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  
+  <div class="navbar">
+    <div class="logo"><img src="your-logo.png" alt="Logo" /></div>
+    <div class="nav-icons">
+      <button><i class="fa-solid fa-bars"></i> <p>Menu</p></button>
+      <button><i class="fa-solid fa-map-location-dot"></i><p>Destinations</p></button>
+      <button><i class="fa-solid fa-ticket"></i><p>Book</p></button>
+      <button><i class="fa-solid fa-percent"></i><p>Offers</p></button>
+      <button><i class="fa-solid fa-headset"></i><p>Contact</p></button>
+      <button><i class="fa-solid fa-user-plus"></i><p>Sign Up</p></button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="slideshow">
+      <div class="slide active"><img src="img1.jpg" alt="Rishikesh" /><div class="text">Rishikesh</div></div>
+      <div class="slide"><img src="img2.jpg" alt="Nainital" /><div class="text">Nainital</div></div>
+      <div class="slide"><img src="img3.jpg" alt="Massoorie" /><div class="text">Massoorie</div></div>
+    </div>
+
+    <div class="form-box">
+      <gmpx-placeautocomplete placeholder="Pickup Location"></gmpx-placeautocomplete>
+      <gmpx-placeautocomplete placeholder="Drop Location"></gmpx-placeautocomplete>
+      <button class="start-button">Start Journey</button>
+    </div>
+  </div>
+
+  <!-- Google Maps Scripts -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLjsMp1wc1XavxjHGLzIeZrFHRhJbaZzY&libraries=maps,places">
+  </script>
+  <script async defer
+    src="https://unpkg.com/@googlemaps/places-autocomplete-element@1.1.0/dist/index.min.js">
+  </script>
+
+  <script src="test.js"></script>
+</body>
+</html>
